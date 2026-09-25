@@ -1,0 +1,20 @@
+{
+  "name": "legal-intake-stream-cutover",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/legal_ops_server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx",
+    "demo": "tsx src/demo_matter_cutover.ts"
+  },
+  "dependencies": {
+    "openai": "^4.56.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  }
+}

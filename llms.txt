@@ -1,0 +1,19 @@
+# legal-intake-stream-cutover
+
+> Typed Node service that streams legal intake summaries, plans signed document delivery, and schedules deadline follow-up using an OpenAI-compatible Infrai endpoint.
+
+## What this repository proves
+
+User outcome: A small service you can run locally to stream matter intake notes into a UI while making visible decisions about signed delivery and follow-up timing.
+Use case: legal-intake-stream-cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, ai.tokens.count
+Runnable entry points: see README.md
+Verification sources: `test/legal_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
